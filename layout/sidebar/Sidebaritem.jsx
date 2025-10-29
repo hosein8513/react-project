@@ -5,7 +5,7 @@ const Sidebaritem = ({to,children}) => {
     return (
         <li>
             <NavLink to={to} className={({isActive})=>
-            `hover:bg-blue-100 p-2 rounded-lg w-full h-full block ${isActive? "bg-blue-300":""}`}>{children}</NavLink>
+            `hover:bg-blue-100 dark:hover:bg-blue-400 p-2 rounded-lg w-full h-full block ${isActive? "bg-blue-300 dark:bg-blue-500":""}`}>{children}</NavLink>
         </li>
     );
 };

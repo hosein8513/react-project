@@ -7,7 +7,7 @@ import Gallery from "../../pages/gallery/Gallery";
 
 const Content = () => {
     return (
-        <div className="fixed top-0 left-0 pr-64 pt-16 w-full h-screen bg-green-200">
+        <div className="fixed top-0 left-0 pr-64 pt-16 w-full h-screen dark:bg-purple-900">
             <div className="p-4">
                 <Routes>
                    <Route path="/users" element={<Users/>}></Route>
