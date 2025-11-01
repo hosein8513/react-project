@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { Navigate, Route, Routes } from "react-router";
 import Users from "../../pages/users/Users";
 import Posts from "../../pages/posts/Posts";
 import Comments from "../../pages/comments/Comments";
@@ -7,7 +7,7 @@ import Gallery from "../../pages/gallery/Gallery";
 
 const Content = () => {
     return (
-        <div className="fixed top-0 left-0 pr-64 pt-16 w-full h-screen dark:bg-purple-900">
+        <div className="fixed top-0 left-0 pr-64  w-full h-screen dark:bg-purple-900">
             <div className="p-4">
                 <Routes>
                    <Route path="/users" element={<Users/>}></Route>
@@ -15,6 +15,7 @@ const Content = () => {
                    <Route path="/comments" element={<Comments/>}></Route>
                    <Route path="/tasks" element={<Tasks/>}></Route>
                    <Route path="/gallery" element={<Gallery/>}></Route>
+                   <Route path="/" element={<Navigate to="/users"/>}></Route>
                 </Routes>
 
             </div>
