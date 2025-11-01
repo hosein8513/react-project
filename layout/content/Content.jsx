@@ -4,13 +4,16 @@ import Posts from "../../pages/posts/Posts";
 import Comments from "../../pages/comments/Comments";
 import Tasks from "../../pages/tasks/Tasks";
 import Gallery from "../../pages/gallery/Gallery";
+import Adduser from "../../pages/users/Adduser";
 
 const Content = () => {
     return (
-        <div className="fixed top-0 left-0 pr-64  w-full h-screen dark:bg-purple-900">
-            <div className="p-4">
+        <div className="fixed top-0 left-0 pr-64 pt-16  w-full h-screen dark:bg-purple-900">
+            <div className="">
                 <Routes>
                    <Route path="/users" element={<Users/>}></Route>
+                   <Route path="/users/adduser" element={<Adduser/>}></Route>
+                   <Route path="/users/edit/:id" element={<Adduser/>}></Route>
                    <Route path="/posts" element={<Posts/>}></Route>
                    <Route path="/comments" element={<Comments/>}></Route>
                    <Route path="/tasks" element={<Tasks/>}></Route>
