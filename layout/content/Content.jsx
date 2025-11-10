@@ -6,6 +6,7 @@ import Tasks from "../../pages/tasks/Tasks";
 import Gallery from "../../pages/gallery/Gallery";
 import Adduser from "../../pages/users/Adduser";
 import Addcomment from "../../pages/comments/Addcomment";
+import Addtask from "../../pages/tasks/Addtask";
 
 const Content = () => {
     return (
@@ -19,6 +20,7 @@ const Content = () => {
                    <Route path="/comments" element={<Comments/>}></Route>
                    <Route path="/comments/add" element={<Addcomment/>}></Route>
                    <Route path="/tasks" element={<Tasks/>}></Route>
+                   <Route path="/tasks/add" element={<Addtask/>}></Route>
                    <Route path="/gallery" element={<Gallery/>}></Route>
                    <Route path="/" element={<Navigate to="/users"/>}></Route>
                 </Routes>
